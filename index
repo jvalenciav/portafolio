@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Fernanda Guadalupe Salazar Sánchez</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #6c63ff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffe97f !important;
+    }
+
+    .hero {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('https://www.michaelpage.es/sites/michaelpage.es/files/styles/advice_node_desktop/public/2021-11/Web%20Developer.jpg.webp?itok=2jUMsHYC') 
+              no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 140px 20px;
+}
+
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    .btn-custom {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-custom:hover {
+      background: #e65a50;
+      transform: translateY(-2px);
+    }
+
+    .categories {
+      padding: 80px 0;
+    }
+
+    .categories h2 {
+      text-align: center;
+      color: #6c63ff;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .categories p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      color: #555;
+    }
+
+    .portfolio-item {
+      text-align: center;
+      margin-bottom: 40px;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-item h5 {
+      margin-top: 15px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .portfolio-item p {
+      color: #777;
+    }
+
+    .progress {
+      height: 22px;
+      border-radius: 30px;
+      background-color: #e0e0e0;
+      margin-bottom: 25px;
+    }
+
+    .progress-bar {
+      font-weight: 500;
+      line-height: 22px;
+      background-color: #6c63ff !important;
+    }
+    .footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+    .footer p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#hero">Portafolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon text-white">☰</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <h1>FERNANDA GUADALUPE SALAZAR SÁNCHEZ</h1>
+    <p>Desarrolladora Web en formación con pasión por la tecnología</p>
+  </header>
+
+  <section id="sobre-mi" class="categories container">
+    <h2>Sobre Mí</h2>
+    <p>Estudiante de la Universidad Tecnológica del Valle de Toluca, apasionada por el desarrollo web, el diseño y la innovación digital. Siempre en busca de nuevos retos y aprendizajes.</p>
+    <div class="text-center">
+      <a href="#contacto" class="btn btn-custom">Contáctame</a>
+    </div>
+  </section>
+
+  <section id="habilidades" class="categories container">
+    <h2>Habilidades</h2>
+    <p class="text-center">HTML5</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%;">85%</div>
+    </div>
+    <p class="text-center">CSS3</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%;">85%</div>
+    </div>
+    <p class="text-center">Bootstrap 4</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%;">85%</div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="categories container">
+    <h2>Portafolio</h2>
+    <div class="row">
+      <div class="col-md-4 portfolio-item">
+        <img src="https://img.freepik.com/fotos-premium/sueteres-taza-te-cuaderno-computadora-portatil-ropa-tejer_227197-124.jpg?semt=ais_hybrid" alt="Proyecto 1"/>
+        <h5>Desarrollo Web 1</h5>
+        <p>Recetas de comida </p>
+        <a href="https://fernanda-salazar-2gul.vercel.app/" class="btn btn-custom">Visitar Web</a>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <img src="https://img.freepik.com/fotos-premium/sueteres-taza-te-cuaderno-computadora-portatil-ropa-tejer_227197-124.jpg?semt=ais_hybrid" alt="Proyecto 2"/>
+        <h5>Desarrollo Web 2</h5>
+        <p>Petshop carrito de compras</p>
+        <a href="https://carrito-blond.vercel.app" class="btn btn-custom">Visitar Web</a>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <img src="https://img.freepik.com/fotos-premium/sueteres-taza-te-cuaderno-computadora-portatil-ropa-tejer_227197-124.jpg?semt=ais_hybrid" alt="Proyecto 3"/>
+        <h5>Desarrollo Web 3</h5>
+        <p>Para nuestro cliente</p>
+        <a href="#" class="btn btn-custom">Visitar Web</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="categories container">
+    <h2>Contacto</h2>
+    <p class="text-center">Puedes contactarme a través de:</p>
+    <p class="text-center"><strong>Correo:</strong> fernanditasalazarsitaxd@gmail.com</p>
+    <p class="text-center"><strong>Teléfono:</strong> 352 115 16 23</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Fernanda Guadalupe Salazar Sánchez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
